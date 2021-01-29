@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: serif;
+    font-size: 16px;
+    padding-left: 4px;
+    z-index: 5;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+model-viewer {
+    width: 100vw;
+    height: 100vh;
+    --progress-bar-color: transparent;
+}
+
+.text {
+    width: 92vw;
+    margin: 4vh 4vw;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    font-family: serif;
+    font-size: 16px;
+    color: blue;
+}
+
+.english {
+    width: 92vw;
+    margin: 10vh 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.eng-btn:hover + .english {
+    display: block;
+}
+
+.japanese {
+    width: 92vw;
+    margin: 10vh 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.jpn-btn:hover + .japanese {
+    display: block;
+}
