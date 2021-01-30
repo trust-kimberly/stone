@@ -3,6 +3,11 @@ body {
     height: 0;
 }
 
+a {
+    padding-left: 5px;
+    text-decoration: none;
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -31,34 +36,69 @@ model-viewer {
     width: 92vw;
     margin: 4vh 4vw;
     position: fixed;
-    display: flex;
-    justify-content: flex-end;
     z-index: 2;
     font-family: serif;
     font-size: 16px;
-    color: blue;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container {
+    margin: 4vh 4vw;
+    position: fixed;
+    z-index: 2;
+    font-family: serif;
+    font-size: 16px;
+    color: black;
+    display: grid;
+    grid-template-rows: 16px 1fr;
+    grid-template-columns: 46vw 46vw;
+    grid-template-areas: 
+    "left right"
+    "text text";
+}
+
+.left {
+    grid-area: left;
+    text-align: left;
+}
+
+.right {
+    grid-area: right;
+    text-align: right;
 }
 
 .english {
-    width: 92vw;
-    margin: 10vh 0;
-    display: none;
-    position: absolute;
-    z-index: 1;
+    grid-area: text;
+    margin-top: 5vh;
 }
 
-.eng-btn:hover + .english {
+.eng-hover {
+    width: 92vw;
+    margin: 10vh 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.eng-btn:hover + .eng-hover {
     display: block;
 }
 
 .japanese {
-    width: 92vw;
-    margin: 10vh 0;
-    display: none;
-    position: absolute;
-    z-index: 1;
+    grid-area: text;
+    margin-top: 5vh;
 }
 
-.jpn-btn:hover + .japanese {
+.jpn-hover {
+    width: 92vw;
+    margin: 10vh 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.jpn-btn:hover + .jpn-hover {
     display: block;
 }
