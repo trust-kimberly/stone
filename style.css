@@ -15,6 +15,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: blue;
+}
+
 button {
     background-color: transparent;
     border: none;
@@ -91,9 +95,13 @@ footer {
 .english {
     grid-area: text;
     margin-top: 5vh;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .japanese {
     grid-area: text;
     margin-top: 5vh;
+    text-align: justify;
+    text-justify: inter-word;
 }
