@@ -1,8 +1,8 @@
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+var random = new Array();
+
+random[0] = "mailto:hamzatraheem@icloud.com";
+random[1] = "https://www.instagram.com/hamzat.raheem/";
+
+function randomlink() {
+  window.location = random[Math.floor(Math.random()*random.length)];
   }
-}
