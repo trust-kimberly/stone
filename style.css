@@ -43,7 +43,7 @@ model-viewer {
     --progress-bar-color: transparent;
 }
 
-.text {
+.home-text {
     width: 92vw;
     margin: 4vh 4vw;
     position: fixed;
@@ -55,53 +55,45 @@ model-viewer {
     justify-content: flex-end;
 }
 
+.text {
+    width: 92vw;
+    padding: 4vh 4vw;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    font-family: serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
 footer {
     width: 92vw;
     height: 2vh;
-    margin: 94vh 4vw 4vh;
+    margin-top: 90vh;
+    padding: 4vh 4vw;
     position: fixed;
     z-index: 5;
+    top: 0;
     font-family: serif;
     font-size: 16px;
     color: black;
+    background-color: white;
     text-align: right;
 }
 
-.container {
-    margin: 4vh 4vw;
-    position: fixed;
-    z-index: 2;
-    font-family: serif;
-    font-size: 16px;
-    color: black;
-    display: grid;
-    grid-template-rows: 16px 1fr;
-    grid-template-columns: 46vw 46vw;
-    grid-template-areas: 
-    "left right"
-    "text text";
-}
-
-.left {
-    grid-area: left;
-    text-align: left;
-}
-
 .right {
-    grid-area: right;
     text-align: right;
 }
 
 .english {
-    grid-area: text;
-    margin-top: 5vh;
+    padding: 12vh 4vw;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .japanese {
-    grid-area: text;
-    margin-top: 5vh;
+    padding: 12vh 4vw;
     text-align: justify;
-    text-justify: inter-word;
 }
