@@ -1,7 +1,26 @@
+/* new sketchfab styling  */
 body {
+    padding:0;
     margin: 0;
-    height: 0;
-}
+  }
+  
+  .canvas,
+  .container {
+    width: 100%;
+    height: 125vh;
+  }
+  
+  .container {
+    margin-top: -50px;
+    margin-bottom:-50px;
+  }
+  
+  .container {
+    overflow:hidden;
+    position: absolute;
+    display: block;
+    height: 107vh;
+  }
 
 a {
     text-decoration: none;
@@ -37,16 +56,16 @@ button:hover {
     cursor: pointer;
 }
 
-model-viewer {
+/* model-viewer {
     width: 100vw;
     height: 100vh;
     --progress-bar-color: transparent;
     position: fixed;
-}
+} */
 
 .home-text {
     width: 92vw;
-    margin: 4vh 4vw;
+    margin: 8vh 4vw;
     position: fixed;
     z-index: 5;
     font-family: serif;
