@@ -62,6 +62,12 @@ button:hover {
     --progress-bar-color: transparent;
     position: fixed;
 } */
+    iframe {
+    width: 100vw;
+    height: 100vh;
+    --progress-bar-color: transparent;
+    position: fixed;
+} */
 
 .home-text {
     width: 92vw;
