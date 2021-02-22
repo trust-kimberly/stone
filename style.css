@@ -70,7 +70,7 @@ iframe {
 
 .home-text {
     width: 92vw;
-    margin: 8vh 4vw;
+    margin: 4vh 4vw;
     position: fixed;
     z-index: 5;
     font-family: serif;
@@ -81,7 +81,7 @@ iframe {
 }
 
 a.top {
-    padding-top: 0px;
+    padding-top: 3.5px;
 }
 
 .text {
