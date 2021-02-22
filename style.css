@@ -4,7 +4,7 @@ body {
     margin: 0;
   }
   
-  .canvas,
+  /*.canvas,
   .container {
     width: 100%;
     height: 125vh;
@@ -20,7 +20,7 @@ body {
     position: absolute;
     display: block;
     height: 107vh;
-  }
+  } */
 
 a {
     text-decoration: none;
